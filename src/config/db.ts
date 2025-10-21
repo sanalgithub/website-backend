@@ -9,6 +9,7 @@ const connectDB = async () => {
   try {
     if (!mongoURI || !dbName) {
       throw new Error("mongoURI and dbName must be defined");
+      
     }
 
     if (!db) {
